@@ -1,0 +1,119 @@
+c:\users\jm\documents\visual studio 2017\Projects\Roba\Roba\bin\Debug\Roba.exe.config
+c:\users\jm\documents\visual studio 2017\Projects\Roba\Roba\bin\Debug\Roba.exe
+c:\users\jm\documents\visual studio 2017\Projects\Roba\Roba\bin\Debug\Roba.pdb
+c:\users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.csprojResolveAssemblyReference.cache
+c:\users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pocetna.resources
+c:\users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Properties.Resources.resources
+c:\users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.csproj.GenerateResource.Cache
+c:\users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.exe
+c:\users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.pdb
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\bin\Debug\Dapper.dll
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\bin\Debug\Dapper.xml
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Login.resources
+C:\Users\jm\Documents\Visual Studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Dodaj.DodajNoviProizvod.resources
+C:\Users\jm\Documents\Visual Studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Dodaj.DodajNovogPartnera.resources
+C:\Users\jm\Documents\Visual Studio 2017\Projects\Roba\Roba\obj\Debug\Roba.LeftSide.Kontakt.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Edit.EditProfile.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Edit.Edit_Menu.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Edit.Design.Form_Design.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\bin\Debug\dll\x86\opencv_ffmpeg331.dll
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\bin\Debug\dll\x64\opencv_ffmpeg331_64.dll
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Read_Forms.Detalji.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.Search.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.EditProfile.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.Logo.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.LogoDown.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.LogOut.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.Maximize.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.Minimize.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.Ugao.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.X.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.Izvjestaj.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.Partner.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.Pictures.Proizvod.resources
+C:\Users\jm\documents\visual studio 2017\Projects\Roba\Roba\obj\Debug\Roba.UserLogo.resources
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\dll\x86\opencv_ffmpeg331.dll
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\dll\x64\opencv_ffmpeg331_64.dll
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\Roba.pdb
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\Dapper.dll
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\Dapper.xml
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.csprojResolveAssemblyReference.cache
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Dodaj.DodajNoviProizvod.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Dodaj.DodajNovogPartnera.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Edit.Design.Form_Design.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Edit.EditProfile.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Edit.Edit_Menu.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.LeftSide.Kontakt.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Login.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.EditProfile.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.Izvjestaj.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.Logo.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.LogoDown.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.LogOut.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.Maximize.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.Minimize.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.Partner.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.Proizvod.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.Search.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.Ugao.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.UserLogo.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pictures.X.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Pocetna.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Properties.Resources.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.Read_Forms.Detalji.resources
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.csproj.GenerateResource.Cache
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.pdb
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\Roba.exe.config
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\Roba.exe
+C:\Users\jm\Desktop\ee\Roba\obj\Debug\Roba.exe
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\WindowsFormsApplication1.dll
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\WindowsFormsApplication1.dll.config
+C:\Users\jm\Desktop\ee\Roba\bin\Debug\WindowsFormsApplication1.exe.config
+I:\SAVE\ee\Roba\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+I:\SAVE\ee\Roba\bin\Debug\dll\x86\opencv_ffmpeg331.dll
+I:\SAVE\ee\Roba\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+I:\SAVE\ee\Roba\bin\Debug\dll\x64\opencv_ffmpeg331_64.dll
+I:\SAVE\ee\Roba\bin\Debug\Roba.exe.config
+I:\SAVE\ee\Roba\bin\Debug\Roba.exe
+I:\SAVE\ee\Roba\bin\Debug\Roba.pdb
+I:\SAVE\ee\Roba\bin\Debug\Dapper.dll
+I:\SAVE\ee\Roba\bin\Debug\Dapper.xml
+I:\SAVE\ee\Roba\obj\Debug\Interop.Shell32.dll
+I:\SAVE\ee\Roba\obj\Debug\Roba.csproj.ResolveComReference.cache
+I:\SAVE\ee\Roba\obj\Debug\Roba.Dodaj.DodajNoviProizvod.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Dodaj.DodajNovogPartnera.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Edit.Design.Form_Design.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Edit.EditProfile.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Edit.Edit_Menu.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.LeftSide.Kontakt.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Login.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Design.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.EditProfile.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Folders.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Izvjestaj.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Logo.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.LogoDown.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.LogOut.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Maximize.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Minimize.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Partner.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Proizvod.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Search.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Ugao.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Icon.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.X.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pocetna.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Properties.Resources.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Read_Forms.Detalji.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.Resources.Upitnik.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.csproj.GenerateResource.Cache
+I:\SAVE\ee\Roba\obj\Debug\Roba.csproj.CoreCompileInputs.cache
+I:\SAVE\ee\Roba\obj\Debug\Roba.exe
+I:\SAVE\ee\Roba\obj\Debug\Roba.pdb
+I:\SAVE\ee\Roba\obj\Debug\Roba.Pictures.Upitnik.resources
+I:\SAVE\ee\Roba\obj\Debug\Roba.csprojResolveAssemblyReference.cache

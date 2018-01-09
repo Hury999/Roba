@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\OpenCvSharp3-AnyCPU.3.3.1.20171117\build\OpenCvSharp3-AnyCPU.props" Condition="Exists('..\packages\OpenCvSharp3-AnyCPU.3.3.1.20171117\build\OpenCvSharp3-AnyCPU.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B4008A7-5BDB-46C1-A253-AB67826B058A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Roba</RootNamespace>
+    <AssemblyName>Roba</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ikonica.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.4\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DapperFunctions.cs" />
+    <Compile Include="DataBase Objects\Artikal.cs" />
+    <Compile Include="DataBase Objects\DesignGlobal.cs" />
+    <Compile Include="DataBase Objects\Izvjestaj.cs" />
+    <Compile Include="DataBase Objects\Partner.cs" />
+    <Compile Include="DataBase Objects\Tables_Izvjestaji.cs" />
+    <Compile Include="Dodaj\DodajNoviProizvod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodaj\DodajNoviProizvod.Designer.cs">
+      <DependentUpon>DodajNoviProizvod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodaj\DodajNovogPartnera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodaj\DodajNovogPartnera.Designer.cs">
+      <DependentUpon>DodajNovogPartnera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Design\Design_Design.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\Design\Design_Design.Designer.cs">
+      <DependentUpon>Design_Design.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\EditProfile.Designer.cs">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Edit_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\Edit_Menu.Designer.cs">
+      <DependentUpon>Edit_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\CurrentEditGrid.cs" />
+    <Compile Include="Global\DesignGlobalMain.cs" />
+    <Compile Include="Kontakt\Kontakt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kontakt\Kontakt.Designer.cs">
+      <DependentUpon>Kontakt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyFunctions.cs" />
+    <Compile Include="Pictures\Design.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Design.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\EditProfile.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditProfile.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\Folders.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Folders.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\Izvjestaj.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Izvjestaj.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\Logo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Logo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\LogoDown.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogoDown.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\LogOut.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LogOut.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\Maximize.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Maximize.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\Minimize.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Minimize.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\Partner.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Partner.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\Proizvod.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proizvod.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\Search.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Search.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\Ugao.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ugao.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Icon1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\Upitnik.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Upitnik.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pictures\X.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>X.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pocetna.Designer.cs">
+      <DependentUpon>Pocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Read Forms\Detalji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Read Forms\Detalji.Designer.cs">
+      <DependentUpon>Detalji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Upitnik.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Upitnik.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dodaj\DodajNoviProizvod.resx">
+      <DependentUpon>DodajNoviProizvod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodaj\DodajNovogPartnera.resx">
+      <DependentUpon>DodajNovogPartnera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Design\Design_Design.resx">
+      <DependentUpon>Design_Design.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\EditProfile.resx">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Edit_Menu.resx">
+      <DependentUpon>Edit_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kontakt\Kontakt.resx">
+      <DependentUpon>Kontakt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Design.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Design.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\EditProfile.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EditProfile.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Folders.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Folders.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Izvjestaj.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Izvjestaj.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Logo.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Logo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\LogoDown.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogoDown.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\LogOut.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogOut.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Maximize.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Maximize.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Minimize.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Minimize.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Partner.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Partner.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Proizvod.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Proizvod.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Search.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Search.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Ugao.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ugao.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icon.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icon1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\Upitnik.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Upitnik.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures\X.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>X.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pocetna.resx">
+      <DependentUpon>Pocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Read Forms\Detalji.resx">
+      <DependentUpon>Detalji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Upitnik.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Upitnik.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logolitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logolitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logolitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofileliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilelitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofileliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilelitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilelitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofileliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofiledarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofiledarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofiledarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofiledarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofiledarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofiledarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehovedarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editprofilehoverlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjiliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjidarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjidarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjidarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjidarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjidarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjidarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjiliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjilitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjiliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjilitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logodonjilitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizeliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizelitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizeliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizelitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizelitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizeliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizedarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizedarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizedarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizedarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizedarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizedarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizehoverlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs.db" />
+    <None Include="Resources\xdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xhoverliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaolitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaoliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaodarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaodarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaodarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaodarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaodarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaodarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaoliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaolitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaoliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lijeviugaolitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerdarkblue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutDarkBlue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajhoverliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvjestajliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchhoverliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logouthoverliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoutdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizedarkblue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partnerhoverlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvoddarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvoddarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvoddarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvoddarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvoddarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvoddarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodhoverliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proizvodlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverdarkgreen - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverdarkorange - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizedarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizedarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizedarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizedarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizedarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverdarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverdarkgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverdarkorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverdarkpurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverdarkred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverdarkyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverlitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverlitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverlitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizehoverliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizeliteblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizelitegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizeliteorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizelitepurple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizelitered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizeliteyellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizedarkblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ikonica.ico" />
+    <None Include="Resources\f4e3hc.jpg" />
+    <None Include="Resources\GreenLight.png" />
+    <None Include="Resources\PurpleDark.png" />
+    <None Include="Resources\RedDark.png" />
+    <None Include="Resources\BlueDark.png" />
+    <None Include="Resources\OrangeDark.png" />
+    <None Include="Resources\YellowDark.png" />
+    <None Include="Resources\GreenDark.png" />
+    <None Include="Resources\PurpleLight.png" />
+    <None Include="Resources\RedLight.png" />
+    <None Include="Resources\BlueLight.png" />
+    <None Include="Resources\OrangeLight.png" />
+    <None Include="Resources\YellowLight.png" />
+    <None Include="Resources\ikonica.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\OpenCvSharp3-AnyCPU.3.3.1.20171117\build\OpenCvSharp3-AnyCPU.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCvSharp3-AnyCPU.3.3.1.20171117\build\OpenCvSharp3-AnyCPU.props'))" />
+  </Target>
+</Project>

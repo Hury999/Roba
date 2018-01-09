@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using  Roba.Authorization;
+
+namespace Roba
+{
+    public partial class Pocetna : Form
+    {
+        public Pocetna()
+        {
+            InitializeComponent();
+        }
+
+        private void Pocetna_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = true;
+            Password Form_pass = new Password();
+            Form_pass.Show();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_Search_MouseEnter(object sender, EventArgs e)
+        {
+            btn_Search_Hover.Visible = true;
+        }
+
+        private void btn_Search_DragEnter(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void btn_Search_Hover_MouseLeave(object sender, EventArgs e)
+        {
+            btn_Search_Hover.Hide();
+        }
+
+        private void btn_Home_Hover_MouseLeave(object sender, EventArgs e)
+        {
+            btn_Home_Hover.Visible = false;
+        }
+
+        private void btn_Home_MouseEnter(object sender, EventArgs e)
+        {
+            btn_Home_Hover.Visible = true;
+        }
+
+        private void btn_Power_MouseEnter(object sender, EventArgs e)
+        {
+            btn_Power_Hover.Visible = true;
+        }
+
+        private void btn_Power_Hover_MouseLeave(object sender, EventArgs e)
+        {
+            btn_Power_Hover.Visible = false;
+        }
+
+        private void Pocetna_Load(object sender, EventArgs e)
+        {
+            this.CenterToScreen();
+        }
+    }
+}
