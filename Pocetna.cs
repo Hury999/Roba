@@ -39,6 +39,7 @@ namespace Roba
         private int X1 = 0;
         private int Y1 = 0;
 
+        //Setovanje stilova formi za aplikaciju iz baze
         public void GetStyle()
         {
             MyFunctions myfx = new MyFunctions();
@@ -121,7 +122,7 @@ namespace Roba
         }
 
         //
-        //Panels for moving form on dekstop
+        //Panels for moving form on dekstop, Panel koji omogucava pomicanje formi na desktopu
         //
 
         bool _MouseDown;
