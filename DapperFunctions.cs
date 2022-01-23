@@ -7,12 +7,15 @@ using Dapper;
 using Roba.DataBase_Objects;
 using System.Data.SqlClient;
 
+//Ova kalsa sluzi za dohvatanje podataka preko SQL query-a. 
+
 namespace Roba
 {
     class DapperFunctions
     {
         public SqlConnection conn;
 
+        //Konstruktor koji locira lokaciju baze podataka na lokalnom racunaru.
         public DapperFunctions()
         {
             string path = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Roba.mdf;Integrated Security=True;Connect Timeout=30";
@@ -21,7 +24,8 @@ namespace Roba
         }
 
         //Artikal
-
+ 
+        //Funkcija koja dohvaca artikle iz baze i smjesta ih u objekte Artikal.
         #region Artikal
         public List<Artikal> GetAll_Artikal()
         {
@@ -31,6 +35,7 @@ namespace Roba
             return artikli;
         }
 
+        
         public List<Artikal> GetAll_Artikal(string WhichColumn, string Value)
         {
 
