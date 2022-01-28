@@ -50,7 +50,9 @@ namespace Roba.LeftSide
         {
             myfx.Set_Background_Image(btn_X, ControlType.X, false);
         }
-
+         
+        //Funkcija koja se poziva na click event od buttona Posalji
+        //Prilikom kliktanja na button, poruka se salje na navedeni mail, sadrzaj poruke je iz textboxa
         private void btn_Posalji_Click(object sender, EventArgs e)
         {
             try
