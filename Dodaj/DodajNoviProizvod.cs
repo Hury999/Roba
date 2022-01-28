@@ -28,6 +28,7 @@ namespace Roba.Dodaj
 
         }
 
+        //Event tipke za izlazak iz programa
         private void btn_X_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -36,11 +37,12 @@ namespace Roba.Dodaj
         }
 
 
+        //Event za loadanje forme DodajNoviProizvod
         private void DodajNoviProizvod_Load(object sender, EventArgs e)
         {
-            this.ShowInTaskbar = false;
-            this.CenterToScreen();
-            FormPocetna_Proizvod.Enabled = false;
+            this.ShowInTaskbar = false; //Da se ne pojavljuje forma u taskbaru
+            this.CenterToScreen(); //Centriranje forme na ekranu
+            FormPocetna_Proizvod.Enabled = false; //Iskljucivanje(sakrivanje) parent forme
 
             myfx.SetColors(btn_Dodaj);
             myfx.SetColors(new List<Control> { this });
