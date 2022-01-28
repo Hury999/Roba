@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Roba.Global
 {
+//Static klasa za pohranivanje globalne varijable koja oznacava trenutni dizajn
     static class CurrentEditGrid
     {
 
