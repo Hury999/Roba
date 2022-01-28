@@ -25,6 +25,7 @@ namespace Roba.Edit
 
         MyFunctions myfx = new MyFunctions();
 
+        //Prilikom loadanja forme EditProfile izvrsi setovanje dizajna forme
         private void EditProfile_Load(object sender, EventArgs e)
         {
             FileStream streamRead = new FileStream(Directory.GetCurrentDirectory() + @"\Res\Logo.jpg",FileMode.Open);
@@ -100,6 +101,8 @@ namespace Roba.Edit
         {
             lbl_Browse.ForeColor = Color.White;
         }
+        
+        //Napravi browsing tipku za sliku tj. omoguci custom biranje slike programa za korisnika
         private void lbl_Browse_Click(object sender, EventArgs e)
         {
             OpenFileDialog fd = new OpenFileDialog();
